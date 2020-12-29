@@ -3,7 +3,7 @@ const { Kafka } = require('kafkajs')
 const kafka = new Kafka({
   clientId: 'my-producer',
   //brokers: ['localhost:9092']
-  brokers: ['172.30.187.46:2181']
+  brokers: ['172.17.0.20:9092']
 })
  
 const producer = kafka.producer()
